@@ -1,0 +1,39 @@
+@import "node_modules/bootstrap/scss/functions";
+
+
+
+// colours
+$theme-colors: (
+  "primary":    #ff923e,
+  "secondary":  #b9bbbe,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      #F5EFE6,
+  "dark":       $dark
+) ;
+
+$theme-colors-text: (
+  "primary": #ff923e,
+  "secondary": $secondary-text-emphasis,
+  "success": $success-text-emphasis,
+  "info": $info-text-emphasis,
+  "warning": $warning-text-emphasis,
+  "danger": $danger-text-emphasis,
+  "light": $light-text-emphasis,
+  "dark": $dark-text-emphasis,
+);
+
+
+$primary: #ff923e; 
+.text-primary {
+  color: $primary; 
+}
+
+$nav-link-hover-color: #ff923e;
+
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/bootstrap";

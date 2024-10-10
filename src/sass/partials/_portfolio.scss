@@ -1,0 +1,158 @@
+.portfolio {
+  margin-top: 20px;
+  color:#091434
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card {
+  width: 40%;
+  padding: 2px;
+  border-radius: 10px;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.work-item-image {
+  margin: 8px 8px 5px;
+  object-fit: cover;
+  min-height:300px;
+  border-radius: 13px;
+  border:var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.work-item-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.work-item-tag {
+  color: #7c8594;
+  font-size: 1rem;
+}
+
+.card.active {
+  transform:  translateX(0) scale(1);
+  opacity: 1;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 54px;
+  cursor: pointer;
+  margin: 0 15px;
+  color: #ff923e;
+}
+
+.live-view-button {
+  width: 100%;
+}
+
+.work-item-button {
+  margin:0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  padding: 1px 7px;
+  margin-right: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.tag-css,
+.tag-html {
+  border: 1px solid #7c8594;
+  color: #7c8594;
+  font-size: 12px;
+}
+
+.tag-js {
+  background-color: #ffb800;
+}
+
+.tag-sass {
+  background-color: #c69;
+}
+
+.tag-react {
+  background-color: #5a69ec;
+}
+
+.tag-bootstrap {
+  background-color: #9073bc;
+}
+
+.tag-api {
+  background-color: #ca49f8;
+}
+
+@media (max-width: 950px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Show only the active card on smaller screens */
+    margin: 0;
+  }
+  
+  .cards {
+    justify-content: center;
+  }
+  
+  .card:not(.active) {
+    display: none; /* Hide all non-active cards */
+  }
+
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 95%;
+  }
+
+  .arrow-container {
+    margin-top: 0px;
+  }
+  
+  .arrow {
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0 15px;
+    color: #ff923e;
+  }
+}

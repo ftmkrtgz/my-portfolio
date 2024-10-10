@@ -1,0 +1,149 @@
+.nav-link {
+    --bs-nav-link-color: #091434;
+    color: var(--bs-nav-link-color) /* Replace with your desired color */
+  }
+
+.navbar{background-color: #F5EFE6}  
+  
+.icon{
+  color: #091434;
+}
+
+.icon-1{
+  color:#091434;
+  opacity:50%
+}
+
+.icon-1:hover{
+  opacity: 100%;
+}
+
+.line{
+  width: 300px;
+}
+
+html,
+body{
+   height: 100%;
+   margin: 0;
+   overflow-x: hidden;
+   font-family: Poppins,sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.container-layout{
+    max-width: 100%;
+    background-color: #F5EFE6;
+    flex: 1;
+    padding: 0;
+}
+
+.contact{
+  margin-bottom: 100px;
+}
+
+.logo-img{
+  font-family: 'Dancing Script', cursive;
+ font-size: 32px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #fff; 
+    z-index: 1000;
+}
+
+.nav-item{
+    font-weight: 600;
+    font-size: 1.8rem;
+   
+}
+footer{
+    flex-shrink: 0;
+    background-color:#ff923e;
+    filter: grayscale(.5) !important;
+    color:white;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.hamburger {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #ff923e;
+    color:white;
+    border-radius: 15px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .menu-icon svg{
+    margin-bottom: 9px;
+  }
+  
+  /* Mobile menu (hidden by default) */
+  .menu {
+    display: flex;
+  }
+ 
+ .menu .nav{
+    display: none;
+  }
+
+  .menu{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item{
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    width: fit-content;
+  }
+
+  .menu.open header{
+    background-color: #fff;
+  }
+
+  .menu.open .nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height:100vh;
+    align-items: center;
+    padding: 1rem;
+    z-index: 5;
+    text-align: center;
+  }
+
